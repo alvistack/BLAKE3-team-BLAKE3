@@ -1,0 +1,4 @@
+blake3 source: file-without-copyright-information
+blake3 source: no-debian-changes
+blake3 source: not-binnmuable-any-depends-any
+blake3 source: weak-library-dev-dependency

@@ -1,0 +1,38 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_configure:
+	pushd c && \
+		cmake \
+			. \
+			-DBLAKE3_USE_TBB="ON" \
+			-DBUILD_SHARED_LIBS=ON \
+			-DCMAKE_BUILD_TYPE=Release \
+			-DCMAKE_INSTALL_PREFIX=/usr && \
+	popd
+
+override_dh_auto_build:
+	pushd c && \
+		cmake \
+			--build . \
+			--parallel 10 \
+			--config Release && \
+	popd
+
+override_dh_auto_install:
+	pushd c && \
+		export DESTDIR=../debian/tmp && \
+		cmake \
+			--install . && \
+	popd
+
+override_dh_install:
+	dh_install
+
+override_dh_auto_clean:
+
+override_dh_auto_test:
+
+%:
+	dh $@
