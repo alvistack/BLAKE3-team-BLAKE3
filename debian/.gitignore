@@ -1,0 +1,8 @@
+*.substvars
+*debhelper*
+.debhelper
+autoreconf.*
+files
+libblake3-0
+libblake3-dev
+tmp

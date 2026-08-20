@@ -1,0 +1,5 @@
+blake3 (100:1.8.7-1) UNRELEASED; urgency=medium
+
+  * https://github.com/BLAKE3-team/BLAKE3/releases/tag/1.8.7
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Thu, 20 Aug 2026 17:22:11 +0800

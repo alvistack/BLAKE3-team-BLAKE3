@@ -1,0 +1,4 @@
+usr/include/blake3.h
+usr/lib/*/cmake/blake3
+usr/lib/*/libblake3.so
+usr/lib/*/pkgconfig/libblake3.pc
